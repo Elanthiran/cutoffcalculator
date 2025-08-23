@@ -1,0 +1,189 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container
+{
+    background-color:black;
+
+}
+.image
+{
+    display: none;
+}
+/* body
+{
+    background-color:black;
+} */
+.img{
+width:200px;
+height:200px;
+border-radius: 50%;
+margin-top: 10px;
+}
+.cutoff-page
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+}
+.update
+{
+    display: flex;
+    justify-content: center;
+    
+}
+.cutoff-profile
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     width:500px;
+     height: 600px; 
+    background-color:white;
+    border-radius: 20px;
+    
+}
+.cutoff-profile:hover
+{
+    background-color:orange;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow:white 1px 1px 10px 3px ;
+}
+
+.output-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color:white;
+    background-position: cover;
+    border-radius:  30px  30px  0px 0px;
+    padding: 10px;
+
+}
+.profile{
+display:flex;
+flex-direction: column;
+}
+.cutoff-head
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input
+{
+    display:block;
+    width:400px;
+    border-radius: 5px;
+    outline-style:none;
+    margin-top: 5px;
+}
+
+.button-type
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-between;  
+}
+
+.btn 
+{
+width: 150px;
+border: none;
+background-color:green;
+color: black;
+border-radius: 10px;
+height:30px;
+
+
+}
+
+.btn:active
+{
+background-color: white;
+color: green;
+}
+
+.btn:hover
+{
+    background-color:red;
+    color: black;
+    
+}
+.cutoff-head
+{
+    font-size: xx-large;
+}
+
+
+@media(max-width:768px)
+{
+    .cutoff-profile
+    {
+        width: 400px;
+        margin:20px
+    }  
+    .img{
+        width:150px;
+        height:150px;
+        border-radius: 50%;
+        margin-left: 15px;
+        }
+    input 
+    {
+        width: 250px;
+        margin-left:20px ;
+    }
+    label
+    {
+        margin-left:20px ;
+    }
+    .button-type
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .btn
+    {
+        width: 250px;
+        margin-left: 20px;
+        
+    }
+    .cutoff-head
+    {
+        font-size: x-large;
+    }
+}
+
+@media(max-width:375px)
+{
+    input 
+    {
+        width: 230px;
+    }
+    .btn
+    {
+        width: 230px;
+    }
+
+    .cutoff-head 
+    {
+        font-size: x-large;
+    }
+    .img{
+        width:120px;
+        height:120px;
+        }
+}

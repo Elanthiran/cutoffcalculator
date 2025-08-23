@@ -1,0 +1,200 @@
+
+.first {     
+    display: flex;   
+    flex-wrap: wrap; 
+    position: relative;      
+    z-index: 1;      
+    overflow:hidden;  
+}
+.container 
+{
+    width:100vw
+}
+
+.full:hover
+{
+    box-shadow:red 1px 1px 10px 2px;
+}
+
+/* Background Container Styles */
+.ece-container, 
+.csc-container, 
+.civil-container, 
+.all-container, 
+.eee-container, 
+.mech-container {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.ece-container {
+    background-image: url('https://lnmiit.ac.in/wp-content/uploads/2023/07/image-8.png');
+}
+
+.csc-container {
+    background-image: url('https://media.licdn.com/dms/image/v2/D4D12AQEEj5XkBXJyqg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1687859863115?e=2147483647&v=beta&t=TF8-xhmHGF5Hx9ze0bDUnZ_dZFAY99N5PkFz2NfUJV0');
+}
+
+.civil-container {
+    background-image: url('https://mcet.in/wp-content/uploads/2016/03/2.jpg');
+}
+
+.all-container {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/HFUAjfbamNhbM8dsNSQW3D-1200-80.jpg');
+}
+
+.eee-container {
+    background-image: url('https://images.pexels.com/photos/236089/pexels-photo-236089.jpeg?cs=srgb&dl=pexels-pixabay-236089.jpg&fm=jpg');
+}
+
+.mech-container {
+    background-image: url('https://www.discoverengineering.org/wp-content/uploads/2023/12/mj_11271_4.jpg');
+}
+
+/* Text and Course Styles */
+.course {     
+    text-align: center;     
+    font-size: 2.5rem;     
+    color: red;     
+    position: relative;     
+    z-index: 1; /* Ensure text stays above the background */ 
+}
+
+/* Card Styles */
+.card {        
+    height: auto;     
+    margin-top: 50px;  
+    width: 300px;
+}
+
+.card-image {     
+    width: 200px;     
+    height: 200px;     
+    border-radius: 10px;     
+    object-fit: cover; 
+}
+
+/* Full Section Styles */
+.full {     
+    background-color: blanchedalmond;         
+    padding: 20px;    
+    margin:30px ;
+    border-radius: 10px;  
+}
+
+/* Navigation Styles */
+.nav {     
+    display: flex;     
+    background-color: black;     
+    padding: 20px;  
+}
+
+.title h1 {     
+    color: bisque;     
+    width: 400px;     
+    display: flex;     
+    justify-content: start; 
+}
+
+/* Link Styles */
+.link {     
+    text-decoration: none;     
+    color: bisque; 
+}
+
+.link-tags {     
+    width: 600px;     
+    display: flex;     
+    justify-content: space-evenly;     
+    align-items: center; 
+}
+
+/* Delete Button Styles */
+.delete-btn {     
+    width: 200px;     
+    color: black;     
+    background-color: red;     
+    border-radius: 10px;     
+    border: none;     
+    padding: 3px; 
+}
+
+.delete-btn:active {     
+    color: black;     
+    background-color: green; 
+}
+
+@media (max-width: 768px) {
+    
+
+    .card {
+        width: 40%;
+        margin: 10px 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .title h1 {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .link-tags {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delete-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .card {
+        width: 70%;
+        margin: 8px 0;
+    }
+
+    .link {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .title h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav {
+        padding: 10px;
+    }
+
+    .delete-btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+.full
+{
+    flex-direction: column;
+    align-items: center;
+    width: 244px;
+}
+
+.card
+{
+    width: 300px ;
+}
+
+}
