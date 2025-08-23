@@ -1,7 +1,7 @@
 import React from 'react'
 import { UseCutOff } from '../Context/StateContext'
 import Card from './Card'
-import "./Card.css"
+import "./card.css"
 const Eee = () => {
     const{data}=UseCutOff()
  const eee=data.filter((item)=>item.course==="EEE")
